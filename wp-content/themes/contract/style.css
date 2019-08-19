@@ -1229,3 +1229,7 @@ img.aligncenter {
 .navi a.active {
 	background-position:-24px 0px;     
 }
+
+.foo {
+	display: none;
+}
