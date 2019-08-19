@@ -1,0 +1,1231 @@
+/*
+Theme Name: Contract Theme
+Theme URI: http://premopress.com
+Description: The Contractor theme is great for service type businesses where images are a selling point. A large image slider & google maps widget are among the many features of this fan favorite.
+Author: PremoPress
+Author URI: http://premopress.com
+Version: 1.2.04
+Tags: contractor, builders, landscaping
+*/
+
+
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+
+
+
+
+
+
+/* GLOBAL */
+
+body{
+	background:url(images/body_bg.jpg);
+	color:#606060;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#header_wrapper{
+	width:100%;
+	height:172px;
+	display:block;
+	background:url(images/header_bg.jpg) repeat-x;
+}
+
+#header_top{
+	width:984px;
+	padding: 0px 41px;
+	height:123px;
+	background:url(images/header_image.jpg) 40px 0px no-repeat;
+	margin:0 auto;
+	clear:both;
+}
+#header_navbar_wrapper{
+	width:984px;
+	padding: 0px 41px;
+	background:url(images/content_bg_navbar.png) bottom no-repeat;
+	clear:both;
+	margin:0 auto;
+	height:49px;
+	display:block;
+}
+#header_navbar{
+	background:url(images/navbar_bg.png) repeat-x;
+	width:984px;
+	height:51px;
+	display:block;	
+}
+#main_wrapper_shadow{
+	background:url(images/content_shadow.png) no-repeat top;
+	margin:0 auto;
+	width:1066px;
+	min-height:700px;
+}
+#main_wrapper{
+	width:1066px;
+	background:url(images/content_bg.png) top  repeat-y;
+	_background:url(images/content_bg_ie6.gif) top no-repeat;
+	clear:both;
+	margin:0 auto;
+	min-height:700px;
+}
+
+#main{
+	width:980px;
+	clear:both;
+	margin:0 auto;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+
+a, a:visited{
+	color:#3f8500;
+}
+a:hover{
+	color:#393;
+}
+
+.entry-title a, .entry-title a:visited,
+.entry-title-blog a, .entry-title-blog a:visited{
+	color:#555;
+}
+.entry-title a:hover, .entry-title-blog a:hover{
+	color:#777;
+}
+.h1-hash{
+	height:43px;
+	display:block;
+	padding:14px 0 0 39px;
+}
+.h2-hash{
+	height:30px;
+	display:block;
+	padding:8px 0 0 39px;
+}
+
+h1{
+	color:#474747;	
+	font-size:30px;
+	font-weight:bold;
+}
+h2{
+	color:#474747;	
+	font-size:24px;
+	font-weight:bold;
+}
+h3{
+	color:#474747;
+	font-weight:bold;
+}
+
+.blue_line_full{
+	width:100%;
+	height:1px;
+	background:#0CF;
+	display:block;
+	margin:6px 0;
+}
+
+
+/* Header Social */
+#header-homelink{
+	height:118px;
+	width:270px;
+	float:left;
+	text-indent:-3000px;
+}
+#header-social{
+	margin-top:20px;
+	width:370px;
+	float:right;
+}
+#widget-social{
+	border-bottom:1px solid #EFEFEF;
+	width:314px;
+	float:left;
+	padding:10px 0;
+	margin-bottom:10px;
+}
+#header-social-buffer{
+	width:60px;
+	height:80px;
+	float:left;
+	display:block;
+}
+#widget-social-icon{
+	background:url(images/phone-icon.html) bottom no-repeat;
+	width:60px;
+	height:50px;
+	float:left;
+	display:block;
+}
+
+#header-social-info,
+#widget-social-info{
+	width:270px;
+	float:right;
+}
+#header-social-info-icons{
+	clear:both;
+	padding-bottom:10px;
+	text-align:right;
+}
+#header-social-info-icons img{
+	margin-right:3px;
+}
+#header-social-info-caption,
+#widget-social-info-caption{
+	clear:both;
+	border-bottom:1px dashed #666;
+	font-size:16px;
+	font-weight:bold;
+	padding:4px 0;
+}
+#header-social-info-number,
+#widget-social-info-number{
+	clear:both;
+	font-size:18px;
+	font-weight:bold;
+	padding:4px 0;
+	color:#eb7f0b;
+	text-align:right;
+}
+#header-social-info-number .caption{
+	color:#666;
+}
+/* Main Navigation */
+
+#access {
+	display: block;
+	margin: 0 auto;
+	height:47px;
+	width:980px;
+	_overflow:hidden;
+}
+#access .menu-header,
+div.menu {
+	font-size: 13px;
+	height:47px;
+	margin-left:30px;
+	display:block;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	width:auto;
+	float:left;
+	border-left:#336b00 1px solid;
+	border-right:#8ccb05 1px solid;
+}
+#access .menu-header li,
+div.menu li {
+	display:block;
+	position:relative;	
+	float:left;
+}
+#access a {
+	font-family:"Times New Roman", Times, serif;
+	font-size:13px;
+	font-weight:bold;
+	color: #FFF;
+	display: block;
+	line-height: 47px;
+	padding: 0 32px;
+	padding-top:0px;
+	text-decoration: none;
+	border-right:#336b00 1px solid;
+	border-left:#8ccb05 1px solid;
+}
+#menu-top-menu{
+	padding:0px;
+}
+#access ul ul {
+	display: none;
+	position: absolute;
+	top: 47px;
+	left: 0;	
+	float: left;
+	width: 182px !important;
+	z-index: 99999;
+	padding:0px;
+	border-left:0px !important;
+	border-right:0px !important;
+	border-bottom:1px #CCC solid;
+}
+#access ul ul li {
+	min-width: 180px;
+	border-top:1px #DEDEDE solid;
+	border-left:1px #DEDEDE solid;
+	border-right:1px #DEDEDE solid;
+	text-align:left;
+	display:block;
+	*clear:both;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+	border:0px;
+	border-bottom:1px #DEDEDE solid;
+}
+#access ul ul a,
+#access ul ul li.current_page_item > a,
+#access ul ul li.current-menu-ancestor > a,
+#access ul ul li.current-menu-item > a,
+#access ul ul li.current-menu-parent > a {
+	background:url(images/navbar_sub_bg.jpg) top;
+	line-height: 1em;
+	padding: 10px;
+	width: 160px;
+	height: auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#336b00;
+	text-transform:none;
+	text-shadow:none;
+	border:0px;
+	
+}
+#access li:hover > a{
+	color: #fff;
+	background:url(images/selector.png) top repeat-x;
+}
+#access ul ul :hover > a {
+	color: #336b00;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/navbar_sub_bg_hover.jpg) top;
+	text-shadow:none;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access ul li.current_page_item > a{
+	background:url(images/selector.png) top repeat-x;
+}	
+
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #fff;
+	
+}
+#access ul ul li.current_page_item > a,
+#access ul ul li.current-menu-ancestor > a,
+#access ul ul li.current-menu-item > a,
+#access ul ul li.current-menu-parent > a {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #336b00;
+	text-shadow:none;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* One Column Layout */
+#content_full_home{
+	width:980px;
+	margin-top:-30px;
+}
+#content_full{
+	width:980px;
+}
+
+
+/* Homepage */
+
+
+.dotted_divider{
+	background:url(images/dotted_divider.png) repeat-x;
+	width:100%;
+	height:3px;
+	clear:both;
+}
+
+
+.full-width-h1{
+	width:980px;
+	margin:0px;
+	padding-left:0px;
+	text-align:center;
+}
+
+
+
+/* Widgets */
+#homepage-widgets-top{
+	width:980px;
+	margin:0 auto;
+	background:url(images/homepage_bg.png) no-repeat bottom;
+	margin-bottom:20px;
+}
+
+
+#homepage-widgets{
+	width:980px;
+	clear:both;
+	display:block;
+}
+#homepage-bottom-widgets{
+	width:928px;
+	margin:0 auto;
+}
+#homepage-bottom-widgets-left{
+	width:630px;
+	margin-right:12px;
+	float:left;
+}
+#homepage-bottom-widgets-right{
+	width:272px;
+	float:right;
+}
+
+.homepage-widget-container-bottom-left{
+	float:left;
+	width:630px;
+	height:170px;
+	display:block;
+}
+.homepage-widget-container-bottom-left img{
+	width:274px;
+	height:144px;
+	padding:2px;
+	border:1px solid #DEDEDE;
+	margin:0px;
+}
+.homepage-widget-container-bottom-left .img_shadow{
+	height:7px;
+	width:274px;
+	display:block;
+	margin:0px;
+	padding:0px;
+	background:url(images/img_shadow_large.jpg) top;
+}
+
+
+.homepage-widget-container-bottom-right{
+	padding-bottom:20px;
+}
+
+.home-testimonial{
+	float:left;
+	padding-left:6px;
+}
+.home-testimonial h1,.home-testimonial h2,.home-testimonial h3{
+	font-size:16px;
+	float:left;
+	margin:3px 0;
+}
+.home-testimonial h2{
+	font-size:13px;
+	margin:3px 0;
+}
+.home-testimonial h3{
+	font-size:10px;
+	color:#999;
+	margin:3px 0;
+	border:none;
+}
+
+.home-welcome{
+	width:900px;
+	min-height:80px;
+	margin:0 auto;
+	display:block;
+	clear:both;
+}
+.home-welcome-message{
+	width:750px;
+	float:left;
+}
+
+.home-welcome-right{
+	width:150px;
+	float:right;
+}
+
+
+
+.home-welcome-button, .home-welcome-button:visited, #get_directions{
+	background:url(images/button.png);
+	width:134px;
+	height:32px;
+	padding-top:17px;
+	color:#FFF;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+	border:none;
+	line-height: 1;
+}
+.home-welcome-button:hover, .home-welcome-button:visited:hover, #get_directions:hover{
+	background:url(images/button.png) 0px -49px;
+	color:#FFF;
+	text-decoration:none;
+	line-height: 1;
+}
+
+li.st-custom-wi img{
+	width:244px;
+	height:133px;
+	padding:2px;
+	border:1px solid #DEDEDE;
+	margin:0px;
+}
+li.st-custom-wi .img_shadow{
+	height:7px;
+	width:244px;
+	display:block;
+	margin:0px;
+	padding:0px;
+	background:url(images/img_shadow_large.jpg) top;
+}
+
+
+#footer_map_canvas_border{
+	padding:3px;
+	border:1px solid #EFEFEF;
+	margin:0 auto;
+	width:264px;
+	height:124px;
+}
+#footer_map_canvas{
+	width:264px;
+	height:124px;	
+}
+
+#footer_map_link{
+	width:284px;
+	text-align:center;
+	padding-top:10px;
+}
+
+.xoxo #footer_map_canvas_border{
+	padding:3px;
+	border:1px solid #EFEFEF;
+	margin:0 auto;
+	width:246px;
+	height:124px;
+}
+.xoxo #footer_map_canvas{
+	width:246px;
+	height:124px;	
+}
+.xoxo #footer_map_link{
+	width:260px;
+	text-align:center;
+	padding-top:10px;
+}
+
+
+
+
+
+/* Directions */
+
+.directions-left{
+	width:320px;
+	margin-right:20px;
+	float:left;
+}
+.directions-right{
+	width:640px;
+	float:left;
+}
+#map_canvas_border{
+	padding:3px;
+	border:1px solid #EFEFEF;
+	float:left;
+	width:600px;
+	height:640px;
+}
+#map_canvas{
+	width:600px;
+	height:640px;	
+}
+#map_info_div{
+	margin:20px 0;
+	clear:both;
+}
+.hidden{
+	display:none;
+}
+
+
+
+/* Two Column Layout */
+
+#content_left{	
+	width:640px;
+	float:left;
+	padding-right:20px;
+}
+#primary{
+	background:url(images/sidebar_divider.jpg) left repeat-y;
+	padding-left:20px;
+	width:270px;
+	padding-right:20px;
+	float:right;
+	
+}
+#breadcrum{
+	font-size:11px;
+	padding:4px 0 8px 0px;
+	border-bottom:1px dashed #DEDEDE;
+	margin-left:39px;
+}
+
+.post-wrapper{
+	padding-bottom:30px;
+	position:relative;
+	*position:inherit;
+}
+
+#comments-wrapper{
+	width:639px;
+}
+
+
+.wide-entry-title-wrapper{
+	width:941px;
+}
+.entry-title-wrapper{
+	width:600px;
+}
+
+
+.entry-title{
+	width:560px;
+	float:left;
+}
+.entry-content h3{
+	border:none;
+}
+.entry-content blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 24px;
+	text-align: right;
+	width: 33%;
+}
+.entry-content blockquote.right {
+	float: right;
+	margin-left: 24px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+.entry-content img{
+	border:1px solid #CCC;
+	padding:3px;
+	background:#FFF;
+}
+.entry-comments{
+	background:url(images/comments_bubble.png) no-repeat;
+	top:14px;
+	right:30px;
+	width:29px;
+	height:29px;
+	color:#FFF;
+	float:left;
+}
+.entry-comments a{
+	color:#FFF;
+	font-size:11px;
+	width:29px;
+	height:15px;
+	padding-top:5px;
+	text-align:center;
+	display:block;
+}
+.entry-title a,
+.entry-title-blog a{
+	font-size:30px;	
+	text-decoration:none;
+}
+.entry-summary, .entry-content{
+	padding:10px 0 0 39px;
+}
+.entry-content-wide{
+	padding:10px 39px 0 39px;
+}
+.entry-published{
+	padding:10px 0 0 39px;
+	font-size:11px;
+	clear:both;
+}
+
+.entry-utility{
+	padding:10px 0 0 39px;
+	font-size:11px;
+	line-height:14px;
+}
+.entry-utility a{
+	font-size:11px;
+	text-decoration:underline;
+}
+.post-thumbnail-link{margin-right:10px;margin-bottom:6px;float:left;}
+.post-thumbnail-link img{border:4px #FFF solid;-moz-box-shadow: 0px 0px 3px #999;	-webkit-box-shadow: 0px 0px 3px #999;box-shadow: 0px 0px 3px #999;}
+
+ 
+
+/* Footer */
+#footer_wrapper{
+	width:1066px;
+	background:url(images/content_bg_navbar.png) top no-repeat;
+	_background:none;
+	clear:both;
+	height:42px;
+	display:block;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+#footer{
+	background:url(images/footer_bg.png) repeat-x;
+	width:982px;
+	height:30px;
+	display:block;
+	clear:both;	
+	margin:0 auto;
+	padding-top:12px;	
+}
+#footer-copy{
+	float:left;
+	width:600px;
+	color:#FFF;
+	font-size:12px;
+	line-height:16px;
+	padding-left:20px;
+}
+#footer-copy a, #footer-copy a:visited, #footer-copy a:hover{
+	color:#FFF;
+}
+#footer-social-info-icons{
+	width:170px;
+	float:right;
+	padding-bottom:10px;
+}
+#footer-social-info-icons img{
+	margin-right:3px;
+}
+
+
+
+
+
+/* Sidebar */
+.xoxo{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+}
+.xoxo li{
+	padding:20px 0px;
+}
+
+.xoxo .location-title{
+	display:none;
+}
+
+.sidebar-widget-title, h3{
+	height:24px;
+	font-size:18px;
+	margin-bottom:4px;
+	color:#474747;
+	border-bottom:1px dashed #DEDEDE;
+}
+.widget-container{
+	text-align:justify;
+}
+.widget-container ul{
+	list-style:disc;
+	padding-left:16px;
+}
+.widget-container ul li{
+	padding:2px 0;
+	color:#474747;
+}
+
+.widget-container ul li span{
+	color:#666;
+}
+
+.widget_search input{
+	padding:6px;
+	width:160px;
+	background:#F9F9F9;
+	border:1px solid #F3F3F3;
+	color:#666;
+	font-size:14px;
+}
+
+
+
+#searchsubmit{
+	background:url(images/navbar_bg.jpg);
+	border:0px;
+	color:#FFF;
+	width:70px;
+	padding:6px;
+	font-size:12px;
+	cursor:pointer;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#searchsubmit:hover{
+	background:url(images/navbar_bg_hover.jpg);	
+}
+.sidebar-featured-image{
+	float:left;
+	margin-right:10px;
+	margin-bottom:6px;
+	padding:3px;
+	border:1px solid #DEDEDE;
+}
+
+
+
+/* Comments */
+.commentlist{
+	padding-left:39px;
+}
+.commentlist li{
+	padding-top:10px;
+}
+.comment-author{
+	width:96px;
+	float:left;
+}
+.comment-wrapper{
+	width:470px;
+	float:left;
+	margin-bottom:20px;
+}
+.comment-meta{
+	color:#888;
+	font-size:11px;
+	padding:5px 0;
+}
+.comment-body{
+	background-color:#f7f7f7;
+	border:1px solid #efefef;
+	color:#606060;
+	padding:10px;
+}
+#reply-title{
+	padding:20px 0;
+	background:none;
+}
+
+#commentform{
+	padding-left:39px;
+}
+#commentform p{
+	clear:both;
+	line-height:26px;
+}
+#commentform p #author,
+#commentform p #email,
+#commentform p #url{
+	float:left;
+	padding:4px;
+	border:1px solid #efefef;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-right:5px;
+}
+#commentform p textarea{
+	padding:4px;
+	border:1px solid #efefef;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:600px;
+}
+
+#commentform p #submit{
+	background:url(images/navbar_bg.jpg);
+	border:0px;
+	color:#FFF;
+	width:120px;
+	padding:6px;
+	font-size:12px;
+	cursor:pointer;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#commentform p #submit:hover{
+	background:url(images/navbar_bg_hover.jpg);	
+}
+
+/* Text elements */
+p {
+	margin-bottom: 18px;
+}
+ul {
+	list-style: disc;
+	margin: 0 0 18px 1.5em;
+}
+ol {
+	list-style: decimal;
+	margin: 0 0 18px 1.5em;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+#comments-wrapper ol,
+#comments-wrapper ul{
+	list-style:none;
+}
+
+dl {
+	margin: 0 0 24px 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 18px;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+big {
+	font-size: 131.25%;
+}
+ins {
+	background: #ffc;
+	text-decoration: none;
+}
+blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+blockquote cite,
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+pre {
+	background: #f7f7f7;
+	color: #222;
+	line-height: 18px;
+	margin-bottom: 18px;
+	padding: 1.5em;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+/* =Images
+-------------------------------------------------------------- */
+
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 12px;
+}
+.wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	margin: 5px 5px 0;
+}
+.wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+.wp-smiley {
+	margin: 0;
+}
+.gallery {
+	margin: 0 auto 18px;
+}
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery img {
+	border: 2px solid #cfcfcf;
+}
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery img {
+	border: 10px solid #f1f1f1;
+}
+.gallery br+br {
+	display: none;
+}
+#content .attachment img {/* single attachment images should be centered */
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+/* Pagination */
+
+ 
+.bottom-page-navigation{
+	width:900px;
+	padding:0 39px;
+	clear:both;
+	height:40px;
+	display:block;
+}
+ 
+.nav-paginate {line-height:31px;}
+.nav-paginate a {background:url(images/pagination_btns.png); width:31px; height:31px; line-height:31px; text-align:center; display:inline-block; color:#666; margin-right:4px;  text-align:center; text-decoration:none; vertical-align:bottom;}
+.nav-paginate a:hover, .nav-paginate a:active {background:url(images/pagination_btns.png) -30px 0px; color:#888;}
+.nav-paginate .nav-title {color:#555; margin-right:4px;}
+.nav-paginate .nav-gap {color:#999; margin-right:4px;}
+.nav-paginate .nav-current {background:url(images/pagination_btns.png) -60px 0px; color:#FFF; width:31px; height:31px; display:inline-block; line-height:31px; text-align:center;}
+.nav-paginate .nav-page {}
+.nav-paginate .nav-prev, .nav-paginate .nav-next {}
+
+
+
+
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.slideshow_wrapper{
+	width:910px;
+	height:400px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.scrollable {
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 910px;
+	height:356px;
+	background:url(images/slide_ng.html) no-repeat;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accommodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+/*
+	a single item. must be floated in horizontal scrolling.
+	typically, this element is the one that *you* will style
+	the most.
+*/
+.items div {
+	float:left;
+	width:908px; 
+	height:352px; 
+	position:relative; 
+	text-align:center; 
+	overflow:hidden;
+}
+.items div img{
+	border:2px solid #FFF;
+}
+/* position and dimensions of the navigator */
+.navi {
+	background:url(images/slider_shadow.png) top no-repeat;
+	margin:0 auto;
+	padding-top:6px;
+	width:600px;
+	height:40px;
+	text-align:center;
+	z-index:9999;
+}
+
+
+/* items inside navigator */
+.navi a {
+	width:12px;
+	height:12px;
+	margin:3px;
+	background:url(images/slider_controlnav.png) 0 0 no-repeat;
+	display:inline-block;
+	font-size:1px;
+}
+
+/* mouseover state */
+.navi a:hover {
+	background-position:-12px 0px;      
+}
+
+/* active state (current page state) */
+.navi a.active {
+	background-position:-24px 0px;     
+}
